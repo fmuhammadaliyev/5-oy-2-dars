@@ -43,18 +43,15 @@ const getData = async () => {
 };
 getData();
 
-// Modal ochish
 openModalBtn.addEventListener("click", () => {
   modal.style.display = "flex";
 });
 
-// Modal yopish
 closeModalBtn.addEventListener("click", () => {
   modal.style.display = "none";
   newNameInput.value = "";
 });
 
-// Yangi user qo‘shish
 addUserBtn.addEventListener("click", () => {
   const name = newNameInput.value.trim();
   if (name) {
